@@ -115,7 +115,7 @@ body{
 }
 
 .eyebrow{
-  display:inline-flex;align-items:center;gap:12px;width:max-content;
+  display:flex;flex-wrap:wrap;align-items:center;gap:8px 12px;max-width:100%;
   font-size:11px;letter-spacing:0.28em;text-transform:uppercase;
   color:var(--slate);font-weight:600;
   margin-bottom:clamp(26px,4vh,42px);
@@ -124,10 +124,11 @@ body{
 h1{
   font-family:"Clash Display",sans-serif;
   font-weight:600;
-  font-size:clamp(52px,10.5vw,165px);
+  font-size:clamp(34px,10.5vw,165px);
   line-height:0.9;
   letter-spacing:-0.035em;
   color:var(--light);
+  overflow-wrap:break-word;word-break:break-word;hyphens:auto;
 }
 h1 .l2{display:block}
 h1 em{
@@ -495,8 +496,8 @@ footer.site{
   .lb-btn{width:46px;height:46px}
 }
 @media(max-width:390px){
-  h1{font-size:37px}
-  .eyebrow{font-size:10px;letter-spacing:0.2em}
+  h1{font-size:clamp(27px,8.6vw,37px)}
+  .eyebrow{font-size:9.5px;letter-spacing:0.16em;gap:6px 8px}
 }
 
 /* ═══════════════ МЕНЮ-ГАМБУРГЕР ═══════════════ */
